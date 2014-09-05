@@ -1,5 +1,5 @@
 api = 2
-core = 7.x
+core = 7.30
 
 projects[drupal][version] = 7.30
 ; Patch sssue "String offset cast notice in field_invoke_method_multiple()" - let's try patch 2 which is to be RTBC
