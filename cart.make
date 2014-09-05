@@ -36,48 +36,87 @@ projects[entity][subdir] = contrib
 projects[token][subdir] = contrib
 projects[entityreference][subdir] = contrib
 projects[entityreference_autocreate][subdir] = contrib
+projects[references_dialog][subdir] = contrib
 projects[field_group][subdir] = contrib
 projects[entity_view_mode][subdir] = contrib
-projects[references_dialog][subdir] = contrib
 projects[color_field][subdir] = contrib
 projects[link][subdir] = contrib
-projects[flag][subdir] = contrib
 projects[content_complete][subdir] = contrib
-; projects[conditional_fields][subdir] = contrib
 projects[addressfields][subdir] = contrib
 projects[addressfields_tokens][subdir] = contrib
+; projects[flag][subdir] = contrib
+; projects[conditional_fields][subdir] = contrib
 
 ; Feeds
 projects[feeds][subdir] = contrib
 projects[feeds][patch][2237177] = https://www.drupal.org/files/issues/feeds-date_import_fix.patch
-projects[feeds_jsonpath_parser][subdir] = contrib
+; projects[feeds_jsonpath_parser][subdir] = contrib
 projects[feeds_tamper][subdir] = contrib
-projects[instagram_feeds][subdir] = contrib
 projects[job_scheduler][subdir] = contrib
-projects[feeds_jsonpath_parser][subdir] = contrib
-projects[instagram_feeds_plugins][subdir] = contrib
-projects[instagram_feeds][subdir] = contrib
-projects[instagram_feeds_moderation][subdir] = contrib
-
 
 ; others
 projects[manualcrop][subdir] = contrib
-; projects[better_exposed_filters][subdir] = contrib
 projects[wysiwyg][subdir] = contrib
 projects[colorbox][subdir] = contrib
-; projects[select_with_style][subdir] = contrib
 projects[masonry][subdir] = contrib
 projects[masonry_views][subdir] = contrib
+; projects[better_exposed_filters][subdir] = contrib
+; projects[select_with_style][subdir] = contrib
 
 ; Features
-; projects[ ][download][type] = git
-; projects[ ][download][url] = git@github.com:miromarchi/ .git
-; projects[rbv_com_fields][type] = module
-; projects[rbv_com_fields][subdir] = features
+projects[cart_calendar][download][type] = git
+projects[cart_calendar][download][url] = git@github.com:miromarchi/cart_calendar.git
+projects[cart_calendar][type] = module
+projects[cart_calendar][subdir] = features
+
+projects[cart_commons][download][type] = git
+projects[cart_commons][download][url] = git@github.com:miromarchi/cart_commons.git
+projects[cart_commons][type] = module
+projects[cart_commons][subdir] = features
+
+projects[cart_import_ical][download][type] = git
+projects[cart_import_ical][download][url] = git@github.com:miromarchi/cart_import_ical.git
+projects[cart_import_ical][type] = module
+projects[cart_import_ical][subdir] = features
+
+projects[cart_map][download][type] = git
+projects[cart_map][download][url] = git@github.com:miromarchi/cart_map.git
+projects[cart_map][type] = module
+projects[cart_map][subdir] = features
+
+projects[cart_type_catalog][download][type] = git
+projects[cart_type_catalog][download][url] = git@github.com:miromarchi/cart_type_catalog.git
+projects[cart_type_catalog][type] = module
+projects[cart_type_catalog][subdir] = features
+
+projects[cart_type_exhibit][download][type] = git
+projects[cart_type_exhibit][download][url] = git@github.com:miromarchi/cart_type_exhibit.git
+projects[cart_type_exhibit][type] = module
+projects[cart_type_exhibit][subdir] = features
+
+projects[cart_type_org][download][type] = git
+projects[cart_type_org][download][url] = git@github.com:miromarchi/cart_type_org.git
+projects[cart_type_org][type] = module
+projects[cart_type_org][subdir] = features
+
+projects[cart_type_person][download][type] = git
+projects[cart_type_person][download][url] = git@github.com:miromarchi/cart_type_person.git
+projects[cart_type_person][type] = module
+projects[cart_type_person][subdir] = features
+
+projects[cart_views_pages][download][type] = git
+projects[cart_views_pages][download][url] = git@github.com:miromarchi/cart_views_pages.git
+projects[cart_views_pages][type] = module
+projects[cart_views_pages][subdir] = features
 
 ; Themes
-; projects[kalatheme][type] = theme
-; projects[kalatheme][subdir] = contrib
+projects[boostrap][type] = theme
+projects[bootstrap][subdir] = contrib
+
+projects[cart_theme][download][type] = git
+projects[cart_theme][download][url] = git@github.com:miromarchi/cart_theme.git
+projects[cart_theme][type] = theme
+projects[cart_theme][subdir] = custom
 
 ; Libraries
 libraries[leaflet][download][type] = file
@@ -95,12 +134,6 @@ libraries[font-awesome][download][url] = http://fortawesome.github.io/Font-Aweso
 libraries[font-awesome][directory_name] = font-awesome
 libraries[font-awesome][type] = library
 
-; the next file is to be moved into modules/contrib/feeds_jsonpath_parser/
-libraries[jsonpath][download][type] = file
-libraries[jsonpath][download][url] = http://jsonpath.googlecode.com/files/jsonpath-0.8.1.php
-libraries[jsonpath][directory_name] = jsonpath
-libraries[jsonpath][type] = library
-
 libraries[jquery-simple-color][download][type] = git
 libraries[jquery-simple-color][download][url] = https://github.com/recurser/jquery-simple-color.git
 libraries[jquery-simple-color][directory_name] = jquery-simple-color
@@ -116,16 +149,22 @@ libraries[iCalcreator][download][url] = https://github.com/iCalcreator/iCalcreat
 libraries[iCalcreator][directory_name] = iCalcreator
 libraries[iCalcreator][type] = library
 
+libraries[masonry][download][type] = "get"
+libraries[masonry][download][url] = "http://desandro.github.io/masonry/jquery.masonry.min.js"
+libraries[masonry][directory_name] = "masonry"
+libraries[masonry][type] = library
+
 ; the next file is to be moved into modules/contrib/feeds/libraries/simplepie.compiled.php
 libraries[simplepie][download][type] = file
 libraries[simplepie][download][url] = https://github.com/downloads/simplepie/simplepie/SimplePie.compiled.php
 libraries[simplepie][directory_name] = simplepie
 libraries[simplepie][type] = library
 
-libraries[masonry][download][type] = "get"
-libraries[masonry][download][url] = "http://desandro.github.io/masonry/jquery.masonry.min.js"
-libraries[masonry][directory_name] = "masonry"
-libraries[masonry][type] = library
+; the next file is to be moved into modules/contrib/feeds_jsonpath_parser/
+libraries[jsonpath][download][type] = file
+libraries[jsonpath][download][url] = http://jsonpath.googlecode.com/files/jsonpath-0.8.1.php
+libraries[jsonpath][directory_name] = jsonpath
+libraries[jsonpath][type] = library
 
 ; Profile
 ; projects[cart_profile][type] = profile
