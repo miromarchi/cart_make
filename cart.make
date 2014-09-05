@@ -16,7 +16,16 @@ projects[views][subdir] = contrib
 projects[views_bulk_operations][subdir] = contrib
 projects[pathauto][subdir] = contrib
 projects[module_filter][subdir] = contrib
+projects[transliteration][subdir] = contrib
+projects[jquery_update][subdir] = contrib
+
+; Panels
 projects[panels][subdir] = contrib
+projects[panelizer][subdir] = contrib
+projects[][subdir] = contrib
+projects[][subdir] = contrib
+projects[][subdir] = contrib
+projects[][subdir] = contrib
 
 ; date
 projects[date][subdir] = contrib
