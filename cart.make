@@ -16,6 +16,7 @@ projects[views][subdir] = contrib
 projects[views_bulk_operations][subdir] = contrib
 projects[pathauto][subdir] = contrib
 projects[module_filter][subdir] = contrib
+projects[panels][subdir] = contrib
 
 ; date
 projects[date][subdir] = contrib
