@@ -42,8 +42,8 @@ projects[entity_view_mode][subdir] = contrib
 projects[color_field][subdir] = contrib
 projects[link][subdir] = contrib
 projects[content_complete][subdir] = contrib
-projects[addressfields][subdir] = contrib
-projects[addressfields_tokens][subdir] = contrib
+projects[addressfield][subdir] = contrib
+projects[addressfield_tokens][subdir] = contrib
 ; projects[flag][subdir] = contrib
 ; projects[conditional_fields][subdir] = contrib
 
@@ -110,7 +110,7 @@ projects[cart_views_pages][type] = module
 projects[cart_views_pages][subdir] = features
 
 ; Themes
-projects[boostrap][type] = theme
+projects[bootstrap][type] = theme
 projects[bootstrap][subdir] = contrib
 
 projects[cart_theme][download][type] = git
