@@ -18,6 +18,7 @@ projects[pathauto][subdir] = contrib
 projects[module_filter][subdir] = contrib
 projects[transliteration][subdir] = contrib
 projects[jquery_update][subdir] = contrib
+projects[simplify][subdir] = contrib
 
 ; Panels
 projects[panels][subdir] = contrib
@@ -34,9 +35,11 @@ projects[geocoder][subdir] = contrib
 projects[geofield][subdir] = contrib
 projects[geophp][subdir] = contrib
 projects[leaflet][subdir] = contrib
+projects[leaflet][patch][2185767] = https://www.drupal.org/files/issues/field-formatter-errors-2185767-6.patch
 projects[leaflet_markercluster][subdir] = contrib
 projects[leaflet_more_maps][subdir] = contrib
 projects[ip_geoloc][subdir] = contrib
+projects[staticmap][subdir] = contrib
 
 ; entity and fields
 projects[entity][subdir] = contrib
@@ -53,6 +56,8 @@ projects[addressfield][subdir] = contrib
 projects[addressfield_tokens][subdir] = contrib
 ; projects[flag][subdir] = contrib
 ; projects[conditional_fields][subdir] = contrib
+projects[file_entity][subdir] = contrib
+projects[filefield_sources][subdir] = contrib
 
 ; Feeds
 projects[feeds][subdir] = contrib
@@ -69,6 +74,7 @@ projects[masonry][subdir] = contrib
 projects[masonry_views][subdir] = contrib
 ; projects[better_exposed_filters][subdir] = contrib
 ; projects[select_with_style][subdir] = contrib
+; projects[views_autocomplete_filters][subdir] = contrib
 
 ; Features
 projects[cart_calendar][download][type] = git
@@ -174,6 +180,6 @@ libraries[jsonpath][directory_name] = jsonpath
 libraries[jsonpath][type] = library
 
 ; Profile
-; projects[cart_profile][type] = profile
-; projects[cart_profile][download][type] = git
-; projects[cart_profile][download][url] = git@github.com:miromarchi/cart_profile.git
+projects[cart_profile][type] = profile
+projects[cart_profile][download][type] = git
+projects[cart_profile][download][url] = git@github.com:miromarchi/cart_profile.git
