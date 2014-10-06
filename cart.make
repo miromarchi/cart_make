@@ -75,6 +75,7 @@ projects[masonry_views][subdir] = contrib
 ; projects[better_exposed_filters][subdir] = contrib
 ; projects[select_with_style][subdir] = contrib
 ; projects[views_autocomplete_filters][subdir] = contrib
+projects[menu_attributes][subdir] = contrib
 
 ; Features
 projects[cart_calendar][download][type] = git
