@@ -1,8 +1,8 @@
 api = 2
-core = 7.30
+core = 7.31
 
-projects[drupal][version] = 7.30
-; Patch sssue "String offset cast notice in field_invoke_method_multiple()" - let's try patch 2 which is to be RTBC
+projects[drupal][version] = 7.31
+; Patch isssue "String offset cast notice in field_invoke_method_multiple()" - let's try patch 2 which is to be RTBC
 projects[drupal][patch][1824820] = https://www.drupal.org/files/string-offset-cast-1824820-2.patch
 
 ; Contrib
@@ -11,6 +11,7 @@ projects[ctools][subdir] = contrib
 projects[libraries][subdir] = contrib
 projects[diff][subdir] = contrib
 projects[features][subdir] = contrib
+projects[features_extra][subdir] = contrib
 projects[strongarm][subdir] = contrib
 projects[views][subdir] = contrib
 projects[views_bulk_operations][subdir] = contrib
@@ -19,6 +20,7 @@ projects[module_filter][subdir] = contrib
 projects[transliteration][subdir] = contrib
 projects[jquery_update][subdir] = contrib
 projects[simplify][subdir] = contrib
+projects[uuid][subdir] = contrib
 
 ; Panels
 projects[panels][subdir] = contrib
@@ -66,7 +68,7 @@ projects[feeds][patch][2237177] = https://www.drupal.org/files/issues/feeds-date
 projects[feeds_tamper][subdir] = contrib
 projects[job_scheduler][subdir] = contrib
 
-; others
+; Others
 projects[manualcrop][subdir] = contrib
 projects[wysiwyg][subdir] = contrib
 projects[colorbox][subdir] = contrib
@@ -175,10 +177,10 @@ libraries[simplepie][directory_name] = simplepie
 libraries[simplepie][type] = library
 
 ; the next file is to be moved into modules/contrib/feeds_jsonpath_parser/
-libraries[jsonpath][download][type] = file
-libraries[jsonpath][download][url] = http://jsonpath.googlecode.com/files/jsonpath-0.8.1.php
-libraries[jsonpath][directory_name] = jsonpath
-libraries[jsonpath][type] = library
+; libraries[jsonpath][download][type] = file
+; libraries[jsonpath][download][url] = http://jsonpath.googlecode.com/files/jsonpath-0.8.1.php
+; libraries[jsonpath][directory_name] = jsonpath
+; libraries[jsonpath][type] = library
 
 ; Profile
 projects[cart_profile][type] = profile
