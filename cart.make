@@ -21,6 +21,7 @@ projects[transliteration][subdir] = contrib
 projects[jquery_update][subdir] = contrib
 projects[simplify][subdir] = contrib
 projects[uuid][subdir] = contrib
+projects[metatag][subdir] = contrib
 
 ; Panels
 projects[panels][subdir] = contrib
