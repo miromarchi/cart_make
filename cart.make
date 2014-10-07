@@ -22,7 +22,7 @@ projects[jquery_update][subdir] = contrib
 projects[simplify][subdir] = contrib
 projects[uuid][subdir] = contrib
 projects[metatag][subdir] = contrib
-projects[imagecache_token] = contrib
+projects[imagecache_token][subdir] = contrib
 
 ; Panels
 projects[panels][subdir] = contrib
