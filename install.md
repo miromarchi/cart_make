@@ -10,5 +10,5 @@ TODO
 - [ ] content complete
 - [ ] images
 - [x] permissions
-- [ ] login/logout menu items
+- [x] login/logout menu items
 - [x] overrides
