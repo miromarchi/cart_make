@@ -8,17 +8,25 @@ then
     read drupalRoot
     echo "Enter database password"
     read dbPass
-    accountName = admin
-    accountPass = admin
     dbPrefix = cart_
     dbUsr = web
     hostName = localhost
+    accountName = admin
+    accountPass = admin
+    accountMail = admin@localhost.it
+    siteName = Cuban Art Worlwide
+    siteMail = info@cubanartworldwide.com
+    localeLanguage = en
     echo "Other variables assumed: (edit script to change)"
-    echo "accountName=admin"
-    echo "dbPrefix=cart_"
-    echo "accountPass=admin"
-    echo "dbUsr=web"
-    echo "hostName=localhost"
+    echo "dbPrefix = cart_"
+    echo "dbUsr = web"
+    echo "hostName = localhost"
+    echo "accountName = admin"
+    echo "accountPass = admin"
+    echo "accountMail = admin@localhost.it"
+    echo "siteName = Cuban Art Worlwide"
+    echo "siteMail = info@cubanartworldwide.com"
+    echo "localeLanguage = en"     
     echo "Would you like to continue? (y/n)"
     read answer2
     elif [ $answer2 = y ]
@@ -29,7 +37,7 @@ then
         echo "Make file ended"
         mv sites/all/libraries/simplepie/SimplePie.compiled.php sites/all/modules/contrib/feeds/libraries/simplepie.compiled.php
         echo "Move simplepie lib ended"
-        drush si cart_profile --account-name=$accountName --account-pass=$accountPass --db-url=mysql://$dbUsr:$dbPass@$hostName/$drupalRoot --db-prefix=$dbPrefix --locale=en
+        drush si cart_profile --account-name=$accountName --account-pass=$accountPass --account-mail=$accountMail --db-url=mysql://$dbUsr:$dbPass@$hostName/$drupalRoot --db-prefix=$dbPrefix --locale=localeLanguage --site-name=siteName --site-mail=siteMail
         echo "site install ended"
         cp -R sites/all/themes/custom/cart_theme/images sites/default/files/structure
         echo "Theme images copy ended"
