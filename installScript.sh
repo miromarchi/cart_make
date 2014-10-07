@@ -36,5 +36,5 @@ if [ $answer = y ]; then
     echo "Set settings.php permission ended"
     drush cc all
     drush cron
-    echo "Cron, cache clear... script finished."
+    echo "Cache clear, cron... script finished."
 fi

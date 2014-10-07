@@ -7,8 +7,5 @@
 6) drush fra -y
 
 TODO
-- [ ] content complete
-- [ ] images
-- [x] permissions
-- [x] login/logout menu items
-- [x] overrides
+- [x] create term in profile
+- [ ] 

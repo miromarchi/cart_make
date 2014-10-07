@@ -56,6 +56,7 @@ projects[entity_view_mode][subdir] = contrib
 projects[color_field][subdir] = contrib
 projects[link][subdir] = contrib
 projects[content_complete][subdir] = contrib
+projects[content_complete][version] = 1.x-dev
 projects[addressfield][subdir] = contrib
 projects[addressfield_tokens][subdir] = contrib
 ; projects[flag][subdir] = contrib
