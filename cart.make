@@ -167,9 +167,9 @@ libraries[iCalcreator][download][url] = https://github.com/iCalcreator/iCalcreat
 libraries[iCalcreator][directory_name] = iCalcreator
 libraries[iCalcreator][type] = library
 
-libraries[masonry][download][type] = "get"
-libraries[masonry][download][url] = "http://desandro.github.io/masonry/jquery.masonry.min.js"
-libraries[masonry][directory_name] = "masonry"
+libraries[masonry][download][type] = file
+libraries[masonry][download][url] = http://desandro.github.io/masonry/jquery.masonry.min.js
+libraries[masonry][directory_name] = masonry
 libraries[masonry][type] = library
 
 ; the next file is to be moved into modules/contrib/feeds/libraries/simplepie.compiled.php
