@@ -44,6 +44,8 @@ then
         chmod a-w sites/default/; chmod a-w sites/default/settings.php
         drush fra -y
         echo "Set settings.php permission ended"
+        drush cron
+        drush cc all
         echo "Script finished."
 else
     echo "stop."
