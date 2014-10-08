@@ -7,5 +7,4 @@
 6) drush fra -y
 
 TODO
-- [x] create term in profile
 - [ ] 
