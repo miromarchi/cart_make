@@ -22,7 +22,6 @@ read answer
 if [ $answer = y ]; then 
     mkdir $drupalRoot && cd $drupalRoot
     drush cc drush
-    echo "drush cache cleared"
     drush make --working-copy --no-cache ../cart_make/cart.make .
     echo "Make file ended"
     mv sites/all/libraries/simplepie/SimplePie.compiled.php sites/all/modules/contrib/feeds/libraries/simplepie.compiled.php
