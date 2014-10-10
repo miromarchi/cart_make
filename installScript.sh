@@ -3,7 +3,7 @@
 echo "Enter new drupalRoot directory name (it assumes the make file will be in ../cart_make/cart.make from drupalRoot). The same name will serve as databaseName" 
 read drupalRoot
 echo "Enter database password"
-read dbPass
+read -s dbPass
 dbPrefix=cart_
 dbUsr=web
 hostName=localhost
@@ -22,7 +22,7 @@ read answer
 if [ $answer = y ]; then 
     mkdir $drupalRoot && cd $drupalRoot
     drush cc drush
-    drush make --working-copy --no-cache ../cart_make/cart.make .
+    drush make --concurrency=5 --working-copy --no-cache ../cart_make/cart.make .
     echo "Make file ended"
     mv sites/all/libraries/simplepie/SimplePie.compiled.php sites/all/modules/contrib/feeds/libraries/simplepie.compiled.php
     echo "Move simplepie lib ended"

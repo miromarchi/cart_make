@@ -6,5 +6,19 @@
 5) chmod a-w sites/default/; chmod a-w sites/default/settings.php
 6) drush fra -y
 
+Post installtion
+1) add perm taxonomy vocabulary org_types for editor
+
+TESTS
+- [ ] create exhibit > create venue without using ref dialog
+- [ ] 
+
+
 TODO
+- [ ] 
+
+
+Ask
+- [ ] concurrency=5 ?
+- [ ] css home images
 - [ ] 
