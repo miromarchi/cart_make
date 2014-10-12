@@ -26,12 +26,12 @@ if [ $answer = y ]; then
     echo "### Make file finished"
     curl -o sites/all/modules/contrib/feeds/libraries/simplepie.compiled.php https://cloud.github.com/downloads/simplepie/simplepie/SimplePie.compiled.php
     echo "### Simplepie lib downloaded to sites/all/modules/contrib/feeds/libraries/simplepie.compiled.php"
-#    drush si cart_profile --account-name=$accountName --account-pass=$accountPass --db-url=mysql://$dbUsr:$dbPass@$hostName/$drupalRoot --db-prefix=$dbPrefix --locale=localeLanguage
-#    echo "### site install finished"
-#    cp -R sites/all/themes/custom/cart_theme/images sites/default/files/structure
-#    echo "### Theme images copyed"
-#    drush fra -y
-#    drush cc all
-#    drush cron
-#    echo "### Cache clear & cron... script finished."
+    drush si cart_profile --account-name=$accountName --account-pass=$accountPass --db-url=mysql://$dbUsr:$dbPass@$hostName/$drupalRoot --db-prefix=$dbPrefix --locale=localeLanguage
+    echo "### site install finished"
+    cp -R sites/all/themes/custom/cart_theme/images sites/default/files/structure
+    echo "### Theme images copyed"
+    drush fra -y
+    drush cc all
+    drush cron
+    echo "### Cache clear & cron... script finished."
 fi
