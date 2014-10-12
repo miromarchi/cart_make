@@ -174,10 +174,10 @@ libraries[masonry][directory_name] = masonry
 libraries[masonry][type] = library
 
 ; the next file is to be moved into modules/contrib/feeds/libraries/simplepie.compiled.php
-libraries[simplepie][download][type] = file
-libraries[simplepie][download][url] = https://github.com/downloads/simplepie/simplepie/SimplePie.compiled.php
-libraries[simplepie][directory_name] = simplepie
-libraries[simplepie][type] = library
+; libraries[simplepie][download][type] = file
+; libraries[simplepie][download][url] = https://github.com/downloads/simplepie/simplepie/SimplePie.compiled.php
+; libraries[simplepie][directory_name] = simplepie
+; libraries[simplepie][type] = library
 
 ; the next file is to be moved into modules/contrib/feeds_jsonpath_parser/
 ; libraries[jsonpath][download][type] = file
