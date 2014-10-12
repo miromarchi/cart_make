@@ -23,17 +23,15 @@ if [ $answer = y ]; then
     mkdir $drupalRoot && cd $drupalRoot
     drush cc drush
     drush make --concurrency=5 --working-copy --no-cache ../cart_make/cart.make .
-    echo "Make file ended"
-    mv sites/all/libraries/simplepie/SimplePie.compiled.php sites/all/modules/contrib/feeds/libraries/simplepie.compiled.php
-    echo "Move simplepie lib ended"
-    drush si cart_profile --account-name=$accountName --account-pass=$accountPass --db-url=mysql://$dbUsr:$dbPass@$hostName/$drupalRoot --db-prefix=$dbPrefix --locale=localeLanguage
-    echo "site install ended"
-    cp -R sites/all/themes/custom/cart_theme/images sites/default/files/structure
-    echo "Theme images copy ended"
-    chmod a-w sites/default/; chmod a-w sites/default/settings.php
-    drush fra -y
-    echo "Set settings.php permission ended"
-    drush cc all
-    drush cron
-    echo "Cache clear, cron... script finished."
+    echo "### Make file finished"
+    curl -o sites/all/modules/contrib/feeds/libraries/simplepie.compiled.php https://cloud.github.com/downloads/simplepie/simplepie/SimplePie.compiled.php
+    echo "### Simplepie lib downloaded to sites/all/modules/contrib/feeds/libraries/simplepie.compiled.php"
+#    drush si cart_profile --account-name=$accountName --account-pass=$accountPass --db-url=mysql://$dbUsr:$dbPass@$hostName/$drupalRoot --db-prefix=$dbPrefix --locale=localeLanguage
+#    echo "### site install finished"
+#    cp -R sites/all/themes/custom/cart_theme/images sites/default/files/structure
+#    echo "### Theme images copyed"
+#    drush fra -y
+#    drush cc all
+#    drush cron
+#    echo "### Cache clear & cron... script finished."
 fi
