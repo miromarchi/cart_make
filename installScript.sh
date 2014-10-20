@@ -29,9 +29,9 @@ if [ $answer = y ]; then
     drush si cart_profile --account-name=$accountName --account-pass=$accountPass --db-url=mysql://$dbUsr:$dbPass@$hostName/$drupalRoot --db-prefix=$dbPrefix --locale=localeLanguage
     echo "### site install finished"
     cp -R sites/all/themes/custom/cart_theme/images sites/default/files/structure
-    echo "### Theme images copyed"
+    echo "### Theme images copied"
     drush fra -y
     drush cc all
     drush cron
-    echo "### Cache clear & cron... script finished."
+    echo "### Installation script finished."
 fi

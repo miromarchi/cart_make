@@ -8,17 +8,4 @@
 
 Post installtion
 1) add perm taxonomy vocabulary org_types for editor
-
-TESTS
-- [ ] create exhibit > create venue without using ref dialog
-- [ ] 
-
-
-TODO
-- [ ] 
-
-
-Ask
-- [ ] concurrency=5 ?
-- [ ] css home images
-- [ ] 
+2) put site in maintenance mode
